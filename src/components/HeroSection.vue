@@ -113,7 +113,7 @@
     
 }
 .hero_illustration {
-    padding-left: 120px;
+    padding-left: 115px;
     width: 589px;
     height: 892px;
 }
