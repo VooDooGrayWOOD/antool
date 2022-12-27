@@ -5,6 +5,7 @@
             <h1>antools.</h1>
         </div>
         <div class="nav_btn">
+            <div class="nav_btn_items">
                 <div 
                     class="btn"
                     >Home
@@ -21,7 +22,8 @@
                     class="btn"
                     >Blog
                 </div>
-            <div>
+            </div>
+            <div class="sign_login_btn">
                     <div 
                         class="btn"
                     >
@@ -52,8 +54,9 @@ import MyButton from "./MyButton.vue"
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 111px;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -67,7 +70,6 @@ import MyButton from "./MyButton.vue"
 }
 
 .nav_btn {
-    margin-left: auto;
     background-color: transparent;
     letter-spacing: 0.00px;
     line-height: 22.4px;
@@ -76,11 +78,20 @@ import MyButton from "./MyButton.vue"
     display: flex;
     text-align: center;
     align-items: center;
-    white-space: nowrap;
-    width: fit-content;
+}
+.nav_btn_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign_login_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
 }
 
-.btn {
+.navbar .btn {
     margin-left: 60px;
     text-align: center;
     cursor: pointer;
