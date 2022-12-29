@@ -2,7 +2,7 @@
     <div class="tool">
         <div class="template" v-for="tool in tools" :key="tool.id">
             <div class="tools_image">
-                <img :src="tool.tool_image" alt="bb" />
+                <img :src="setup(tool.tool_image)" alt="tool_image" />
                 <div class="name_tools">
                     <p>{{ tool.tool_name }}</p>
                     <p class="subhead_tools">{{ tool.tool_subhead_name }}</p>
@@ -40,7 +40,20 @@ export default {
             required: true
         }
     },
-    components: { MyButton }
+    components: { MyButton },
+    methods: {
+        setup() {
+            const getImageUrl = (tool) => {
+                return new URL(
+                    `../../assets/${tool.tool_image}`,
+                    import.meta.url
+                ).href
+            }
+            return {
+                getImageUrl
+            }
+        }
+    }
 }
 </script>
 
@@ -96,6 +109,9 @@ export default {
     display: flex;
     align-items: flex-start;
     padding: 0px 5px;
+}
+.tools_image img {
+    font-size: 48px;
 }
 .name_tools {
     padding: 0px 30px;

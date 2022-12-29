@@ -5,13 +5,7 @@ import path from 'path'
 export default defineConfig({
     plugins: [
         vue({
-            // template: {
-            //     compilerOptions: {
-            //         isCustomElement: (tag) => {
-            //             return tag.startsWith('Tool')
-            //         }
-            //     }
-            // }
+       
         })
     ],
     resolve: {

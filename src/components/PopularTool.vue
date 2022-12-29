@@ -18,13 +18,13 @@ export default {
                     id: 1,
                     tool_name: 'FIGMA',
                     tool_subhead_name: 'Free',
-                    tool_image: './assets/figma.png'
+                    tool_image: '@/assets/Figma.png'
                 },
                 {
                     id: 2,
                     tool_name: 'Sketch',
                     tool_subhead_name: 'Trial & Paid',
-                    tool_image: '../../assets/logos_sketch.svg'
+                    tool_image: '@/assets/logos_sketch.svg'
                 },
                 {
                     id: 3,
