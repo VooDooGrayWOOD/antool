@@ -25,7 +25,7 @@
 </template>
 
 <script>
-    import MyButton from "./MyButton.vue"
+    import MyButton from "./UI/MyButton.vue"
     export default {
         components: { MyButton }
     }
@@ -46,7 +46,6 @@
     position: relative;
 }
 .hero_section_frame {
-    background-color: transparent;
     border: 1px none;
     display: flex;
     align-items: center;
@@ -56,7 +55,6 @@
     position: relative;
 }
 .hero_text_button {
-    background-color: transparent;
     border: 1px none;
     display: flex;
     flex-direction: column;
@@ -68,7 +66,6 @@
 .headline-subhead {
     align-items: flex-start;
     align-self: stretch;
-    background-color: transparent;
     border: 1px none;
     display: flex;
     flex-direction: column;

@@ -1,14 +1,14 @@
 <template>
-    <div class="tool">
-        <div class="template" v-for="tool in tools" :key="tool.id">
-            <div class="tools_image">
+    <div class="new_tools">
+        <div class="template" v-for="tool in new_tools" :key="tool.id">
+            <div class="new_tools_image">
                 <img :src="tool.tool_image" alt="bb" />
-                <div class="name_tools">
+                <div class="name_new_tools">
                     <p>{{ tool.tool_name }}</p>
-                    <p class="subhead_tools">{{ tool.tool_subhead_name }}</p>
+                    <p class="subhead_new_tools">{{ tool.tool_subhead_name }}</p>
                 </div>
             </div>
-            <div class="tools_description">
+            <div class="new_tools_description">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="action_icons">
@@ -26,16 +26,13 @@
             </div>
         </div>
     </div>
-    <div class="load_container">
-        <my-button class="btn_load_more">Load more</my-button>
-    </div>
 </template>
 
 <script>
 import MyButton from './MyButton.vue'
 export default {
     props: {
-        tools: {
+        new_tools: {
             type: Array,
             required: true
         }
@@ -45,13 +42,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tool {
+.new_tools {
     display: block;
     min-width: 392px;
     min-height: 294px;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
 }
@@ -88,20 +85,20 @@ export default {
         width: fit-content;
     }
 }
-.tools_description p {
+.new_tools_description p {
     color: var(--tool-descrition);
     padding-top: 30px;
 }
-.tools_image {
+.new_tools_image {
     display: flex;
     align-items: flex-start;
     padding: 0px 5px;
 }
-.name_tools {
+.name_new_tools {
     padding: 0px 30px;
     color: var(--text-white-80);
 }
-.subhead_tools {
+.subhead_new_tools {
     color: var(--subhead-tool);
 }
 .action_icons {
