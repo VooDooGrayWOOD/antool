@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <div class="logo">
-            <img src="../assets/Group 159.png" alt="antools">
+            <img src="@/assets/Group 159.png" alt="antools">
             <h1>antools.</h1>
         </div>
         <div class="nav_btn">
