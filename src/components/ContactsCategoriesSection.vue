@@ -3,7 +3,7 @@
     <div class="contact_categories">
         <div class="logo_copyright">
             <div class="logo">
-                <img src="@/assets/Group 159.png" alt="antools" />
+                <img src="@/assets/antool_icon.png" alt="antools" />
                 <h1 class="head">antools.</h1>
             </div>
             <div>
