@@ -21,6 +21,7 @@
 <script>
 import MyButton from './UI/MyButton.vue'
 import NewTool from './UI/NewTool.vue'
+import  * as images from '@/assets/index.js'
 export default {
     components: { MyButton, NewTool },
     data() {
@@ -30,25 +31,25 @@ export default {
                     id: 1,
                     tool_name: 'Zeplin',
                     tool_subhead_name: 'Free & Paid',
-                    tool_image: '../../assets/zeplin.png'
+                    tool_image: images.urlImgZeplin
                 },
                 {
                     id: 2,
                     tool_name: 'PHPStorm',
                     tool_subhead_name: 'Free',
-                    tool_image: '../../assets/jb_phpstorm.png'
+                    tool_image: images.urlImgPHPStorm
                 },
                 {
                     id: 3,
                     tool_name: 'Toolbox',
                     tool_subhead_name: 'Free',
-                    tool_image: '../../assets/jb_toolbox_app.png'
+                    tool_image: images.urlImgToolbox
                 },
                 {
                     id: 4,
                     tool_name: 'Procreate',
                     tool_subhead_name: 'Paid',
-                    tool_image: '../../assets/procreate.png'
+                    tool_image: images.urlImgProcreate
                 }
             ]
         }

@@ -2,7 +2,7 @@
     <div class="tool">
         <div class="template" v-for="tool in tools" :key="tool.id">
             <div class="tools_image">
-                <img :src="setup(tool.tool_image)" alt="tool_image" />
+                <img :src="tool.tool_image" alt="img" />
                 <div class="name_tools">
                     <p>{{ tool.tool_name }}</p>
                     <p class="subhead_tools">{{ tool.tool_subhead_name }}</p>
@@ -12,9 +12,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="action_icons">
-                <div class="action_images" :key="tool.id">
+                <div class="action_images">
                     <img
-                        @click="clickLike"
                         src="@/assets/icons_like.png"
                         alt="icons_like"
                     />
@@ -37,23 +36,10 @@ export default {
     props: {
         tools: {
             type: Array,
-            required: true
+            required: false
         }
     },
     components: { MyButton },
-    methods: {
-        setup() {
-            const getImageUrl = (tool) => {
-                return new URL(
-                    `../../assets/${tool.tool_image}`,
-                    import.meta.url
-                ).href
-            }
-            return {
-                getImageUrl
-            }
-        }
-    }
 }
 </script>
 
@@ -69,7 +55,7 @@ export default {
     align-items: center;
 }
 .template {
-    margin: 0px 25px 100px;
+    margin: auto;
     padding: 33px;
 }
 
@@ -107,7 +93,7 @@ export default {
 }
 .tools_image {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px 5px;
 }
 .tools_image img {
@@ -128,6 +114,9 @@ export default {
 }
 .action_images img {
     padding: 0px 12px 0px 0px;
+}
+.action_button {
+    color: var(--tool-descrition);
 }
 
 .load_container {

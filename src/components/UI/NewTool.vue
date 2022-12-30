@@ -53,7 +53,7 @@ export default {
     align-items: center;
 }
 .template {
-    margin: 0px 25px 100px;
+    margin: auto;
     padding: 33px;
 }
 
@@ -91,7 +91,7 @@ export default {
 }
 .new_tools_image {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px 5px;
 }
 .name_new_tools {
@@ -109,6 +109,9 @@ export default {
 }
 .action_images img {
     padding: 0px 12px 0px 0px;
+}
+.action_button {
+    color: var(--tool-descrition);
 }
 
 .load_container {

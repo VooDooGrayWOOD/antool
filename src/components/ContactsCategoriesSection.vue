@@ -1,5 +1,5 @@
 <template>
-<div class="line"></div>
+    <div class="line"></div>
     <div class="contact_categories">
         <div class="logo_copyright">
             <div class="logo">
@@ -74,13 +74,16 @@ export default {}
     font-size: var(--font-size-s);
     color: var(--tool-descrition);
 }
+.logo_copyright {
+    padding-left: 30px;
+}
 .copyright {
     font-size: var(--font-size-m);
 }
 .logo {
     display: flex;
     justify-content: start;
-    margin: 22px 0;
+    padding: 22px 0;
 }
 .head {
     font-size: var(--font-size-l);

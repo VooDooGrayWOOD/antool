@@ -33,16 +33,12 @@
 
 <style lang="scss" scoped>
 .hero_section {
-    align-items: center;
-    align-self: stretch;
     background-color: var(--background);
-    border: 1px none;
     display: flex;
     gap: 30px;
     height: auto;
     justify-content: center;
-    mix-blend-mode: normal;
-    padding: 80px 195px;
+    padding: 0px 195px;
     position: relative;
 }
 .hero_section_frame {
@@ -55,7 +51,6 @@
     position: relative;
 }
 .hero_text_button {
-    border: 1px none;
     display: flex;
     flex-direction: column;
     bottom: 115px;
@@ -64,9 +59,6 @@
     position: relative;
 }
 .headline-subhead {
-    align-items: flex-start;
-    align-self: stretch;
-    border: 1px none;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,7 +99,7 @@
     width: 58px;
     height: 58px;
     margin: 80px 20px 0 0;
-    
+    cursor: pointer;
 }
 .hero_illustration {
     padding-left: 115px;

@@ -9,6 +9,8 @@
 
 <script>
 import Tool from './UI/Tool.vue'
+import  * as images from '@/assets/index.js'
+
 export default {
     components: { Tool },
     data() {
@@ -18,37 +20,37 @@ export default {
                     id: 1,
                     tool_name: 'FIGMA',
                     tool_subhead_name: 'Free',
-                    tool_image: '@/assets/Figma.png'
+                    tool_image: images.urlImgFigma
                 },
                 {
                     id: 2,
                     tool_name: 'Sketch',
                     tool_subhead_name: 'Trial & Paid',
-                    tool_image: '@/assets/logos_sketch.svg'
+                    tool_image: images.urlImgSketch
                 },
                 {
                     id: 3,
                     tool_name: 'Visual Studio Code',
                     tool_subhead_name: 'Free',
-                    tool_image: '../../assets/logos_visual-studio-code.svg'
+                    tool_image: images.urlImgVSCode
                 },
                 {
                     id: 4,
                     tool_name: 'Notion',
                     tool_subhead_name: 'Free & Paid',
-                    tool_image: '../../assets/notion.png'
+                    tool_image: images.urlImgNotion
                 },
                 {
                     id: 5,
                     tool_name: 'Slack',
                     tool_subhead_name: 'Free & Paid',
-                    tool_image: '../../assets/icons_slack.svg'
+                    tool_image: images.urlImgSlack
                 },
                 {
                     id: 6,
                     tool_name: 'Invision',
                     tool_subhead_name: 'Free & Paid',
-                    tool_image: '../../assets/logos_invicion-icon.svg'
+                    tool_image: images.urlImgInvision
                 }
             ]
         }

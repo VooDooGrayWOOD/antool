@@ -50,9 +50,10 @@ export default {}
 .name_profession {
     position: relative;
     z-index: 1;
-    bottom: 240px;
+    bottom: 245px;
     left: 150px;
     width: 290px;
+    line-height: 0.3;
     background-color: var(--brand-section);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -61,7 +62,7 @@ export default {}
 }
 .name_profession-items {
     position: relative;
-    margin: 10px 28px;
+    padding: 10px 28px;
 }
 .name {
     font-size: var(--font-size-xl);
