@@ -1,14 +1,12 @@
 <template>
     <navbar></navbar>
-    <div>
+    <div class='container'>
         <hero-section></hero-section>
-        <div class="container">
-            <popular-tool></popular-tool>
-            <brand-section></brand-section>
-            <new-commer-tools></new-commer-tools>
-            <testimonial></testimonial>
-            <contributor></contributor>
-        </div>
+        <popular-tool></popular-tool>
+        <brand-section></brand-section>
+        <new-commer-tools></new-commer-tools>
+        <testimonial></testimonial>
+        <contributor></contributor>
         <contacts-categories-section></contacts-categories-section>
     </div>
 </template>
@@ -32,14 +30,18 @@ export default {
         NewCommerTools,
         Testimonial,
         Contributor,
-        ContactsCategoriesSection,
-        BrandSection
+        ContactsCategoriesSection
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 .container {
-    margin: 0px 108px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px;
 }
 </style>
