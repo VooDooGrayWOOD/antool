@@ -38,8 +38,8 @@ export default {
 .logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column: 2 / 2 span;
-    place-items: center;
+    grid-column: 1 / 3 span;
+    place-items: center start;
 }
 
 .nav_btn {
@@ -58,7 +58,13 @@ export default {
 
 .btn_signup {
     display: grid;
-    place-items: center;
+    place-items: center end;
+}
+
+@media screen and (max-width: 730px) {
+    .nav_btn {
+        display: none;
+    }
 }
 
 </style>

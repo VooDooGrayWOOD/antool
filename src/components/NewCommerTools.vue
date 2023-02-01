@@ -63,34 +63,33 @@ export default {
     align-self: stretch;
     background-color: var(--background);
     border: 1px none;
-    display: flex;
+    display: grid;
+    grid-column: 1 / 12 span;
+    grid-row: 4 / 1 span;
     gap: 30px;
     height: auto;
-    justify-content: center;
+    place-items: center;
     mix-blend-mode: normal;
-    margin-top: 200px;
+    margin: 0 auto;
     padding: 80px 95px;
     position: relative;
 }
 .new_commer_section_frame {
     background-color: transparent;
     border: 1px none;
-    display: flex;
-    align-items: center;
-    height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
+    display: grid;
+    place-items: center;
+    // height: auto;
+    // margin-left: -80px;
+    // margin-right: -80px;
+    // position: relative;
 }
 .new_commer_text_button {
     background-color: transparent;
     border: 1px none;
-    display: flex;
-    flex-direction: column;
-    bottom: 115px;
-    gap: 30px;
+    display: grid;
+    gap: 20px;
     height: auto;
-    position: relative;
 }
 .headline-subhead {
     align-items: flex-start;

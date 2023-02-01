@@ -23,26 +23,33 @@ export default {}
     background-color: var(--brand-section);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-    margin-top: 100px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    display: grid;
+    grid-column: 1 / 12 span;
+    grid-row: 3 / 1 span;
+    place-items: center;
+    gap: 20px;
+    max-height: 250px;
+    margin-top: 200px;
 }
 .brand_items {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 55px 83px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
 }
 .brand_header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 55px;
+    display: grid;
+    place-items: center;
     font-size: var(--font-size-l);
     color: var(--text-white-80);
 }
 .brand_images {
-    display: flex;
-    justify-content: space-between;
-    max-height: 51px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center stretch;
+    gap: 30px;
 }
+
 </style>

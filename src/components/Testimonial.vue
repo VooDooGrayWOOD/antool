@@ -36,8 +36,13 @@ export default {}
 
 <style lang="scss" scoped>
 .testimonial {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-column: 2 / 11 span;
+    grid-row: 5 / 1 span;
+    gap: 30px;
+    place-items: center;
+    mix-blend-mode: normal;
+    margin: 0 auto;
 }
 .testimonial_photo {
     max-width: 400px;
@@ -74,12 +79,21 @@ export default {}
     top: 140px;
     margin-left: 40px;
 }
-.chevron {
-    position: relative;
-    top: 280px;
-    display: flex;
-    justify-content: space-between;
+.chevron:nth-child(1) {
+    display: grid;
+    place-items: center;
+    grid-column: 1 / 1 span;
+    grid-row: 5 / 1 span;
 }
+
+.chevron:nth-child(-n+1) {
+    display: grid;
+    place-items: center;
+    grid-column: 12 / 1 span;
+    grid-row: 5 / 1 span;
+}
+
+
 .pagination {
     position: relative;
     bottom: 100px;

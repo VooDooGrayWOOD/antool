@@ -45,17 +45,15 @@ export default {
 
 <style lang="scss" scoped>
 .tool {
-    display: block;
-    min-width: 392px;
-    min-height: 294px;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 50px 20px;
+    margin: 40px auto;
 }
 .template {
-    margin: auto;
+    margin: 0 auto;
     padding: 33px;
 }
 
@@ -128,5 +126,17 @@ export default {
     border: 1px solid var(--button-load-more-border);
     background-color: var(--background);
     color: var(--call-to-action);
+}
+
+@media screen and (max-width: 1000px) {
+    .tool {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .tool {
+        grid-template-columns: 1fr;
+    }
 }
 </style>

@@ -3,8 +3,9 @@
         <p class="header">Most Popular Tools</p>
         <p class="sub_header">Tools for the best Designers and Developers</p>
         <p class="sub_header">most popularly used in the world</p>
+        <Tool class="all_tools" :tools="tools"></Tool>
     </div>
-    <Tool :tools="tools"></Tool>
+    
 </template>
 
 <script>
@@ -60,18 +61,27 @@ export default {
 
 <style lang="scss" scoped>
 .head {
-    margin-bottom: 90px;
+    display: grid;
+    grid-column: 1 / 12 span;
+    grid-row: 2 / 1 span;
+    margin: 0 auto;
 }
 .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     font-size: var(--font-size-xxl);
-    margin-bottom: 25px;
+    margin: 0 auto;
 }
 .sub_header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     font-size: var(font-size-m);
     color: var(--tool-descrition);
+}
+@media screen and (max-width: 730px) {
+    .head {
+        grid-column: 2 / 5 span;
+        margin: 0 auto;
+    }
 }
 </style>

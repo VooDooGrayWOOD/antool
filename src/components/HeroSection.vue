@@ -34,85 +34,101 @@ export default {
 
 <style lang="scss" scoped>
 .hero_section {
-  background-color: var(--background);
-  display: flex;
-  gap: 30px;
-  height: auto;
-  justify-content: center;
-  padding: 0px 195px;
-  position: relative;
+    background-color: var(--background);
+    display: grid;
+    grid-column: 2 / 11 span;
+    grid-row: 1 / 1 span;
+    margin: 0 auto;
 }
 
 .hero_section_frame {
-  border: 1px none;
-  display: flex;
-  align-items: center;
-  height: auto;
-  margin-left: -80px;
-  margin-right: -80px;
-  position: relative;
+ border: 1px none;
+ display: flex;
+ align-items: center;
+ height: auto;
+ position: relative;
 }
 
 .hero_text_button {
-  display: flex;
-  flex-direction: column;
-  bottom: 115px;
-  gap: 30px;
-  height: auto;
-  position: relative;
+ display: grid;
+ place-items: center stretch;
+ gap: 20px;
 }
 
 .headline-subhead {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: auto;
-  position: relative;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ height: auto;
+ position: relative;
 }
 
 .subhead_head {
-  font-size: var(--font-size-xxxl);
+ font-size: var(--font-size-xxxl);
 }
 
 .input_search input {
-  background: linear-gradient(90deg, var(--input-fill), rgba(255, 255, 255, 0.05)) no-repeat;
-  width: 497px;
-  height: 64px;
-  border-radius: 15px;
-  border: none;
-  left: 0;
-  position: absolute;
+ background: linear-gradient(90deg, var(--input-fill), rgba(255, 255, 255, 0.05)) no-repeat;
+ width: 497px;
+ height: 64px;
+ border-radius: 15px;
+ border: none;
+ left: 0;
+ position: absolute;
 }
 
 .input_button {
-  position: relative;
-  z-index: 1;
-  left: 330px;
-  bottom: 22.5px;
+ position: relative;
+ z-index: 1;
+ left: 330px;
+ bottom: 22.5px;
 }
 
 ::-webkit-input-placeholder {
-  padding-left: 45px;
-  font-size: var(--font-size-m);
+ padding-left: 45px;
+ font-size: var(--font-size-m);
 }
 
 .input_img {
-  position: relative;
-  z-index: 1;
-  left: 18px;
-  bottom: -20px;
+ position: relative;
+ z-index: 1;
+ left: 18px;
+ bottom: -20px;
 }
 
 .social_icon img {
-  width: 58px;
-  height: 58px;
-  margin: 80px 20px 0 0;
-  cursor: pointer;
+ width: 58px;
+ height: 58px;
+ margin: 80px 20px 0 0;
+ cursor: pointer;
 }
 
 .hero_illustration {
-  padding-left: 115px;
-  width: 589px;
-  height: 892px;
+ padding-left: 115px;
+ max-width: 589px;
+}
+
+@media screen and (max-width: 1020px) {
+  .hero_section_frame {
+    max-height: 600px;
+  }
+  .hero_text_button {
+    place-items: center;
+  }
+  .subhead_head {
+    font-size: var(--font-size-xxl);
+  }
+  .hero_illustration {
+    display: none;
+  }
+  .input_search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .subhead_head {
+    font-size: var(--font-size-xl);
+  }
 }
 </style>
