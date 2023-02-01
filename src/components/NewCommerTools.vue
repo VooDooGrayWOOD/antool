@@ -4,12 +4,15 @@
             <div class="new_commer_text_button">
                 <div class="headline-subhead">
                     <p class="subhead_head">Newcomer Tools</p>
+                    <div class="subhead">
                     <p>
-                        Wow! see the latest update of the most recommended tools
-                        from reliable designers and developers
+                        Wow! see the latest update of the most 
+                        recommended&nbsp;tools&nbsp;from&nbsp;reliable&nbsp;designers 
+                        and developers
                     </p>
                 </div>
-                <my-button>Explore more</my-button>
+                </div>
+                <my-button >Explore more</my-button>
             </div>
             <div class="tools">
                 <NewTool :new_tools="new_tools"></NewTool>
@@ -59,8 +62,6 @@ export default {
 
 <style lang="scss" scoped>
 .new_commer_section {
-    align-items: center;
-    align-self: stretch;
     background-color: var(--background);
     border: 1px none;
     display: grid;
@@ -70,26 +71,21 @@ export default {
     height: auto;
     place-items: center;
     mix-blend-mode: normal;
-    margin: 0 auto;
-    padding: 80px 95px;
-    position: relative;
+    margin: 200px auto;
 }
 .new_commer_section_frame {
     background-color: transparent;
     border: 1px none;
     display: grid;
     place-items: center;
-    // height: auto;
-    // margin-left: -80px;
-    // margin-right: -80px;
-    // position: relative;
+    grid-template-columns: repeat(2, 1fr);
 }
 .new_commer_text_button {
     background-color: transparent;
     border: 1px none;
     display: grid;
+    place-items: center start;
     gap: 20px;
-    height: auto;
 }
 .headline-subhead {
     align-items: flex-start;
@@ -105,7 +101,23 @@ export default {
 .subhead_head {
     font-size: var(--font-size-xxl);
 }
-.tools {
-    margin-left: 50px;
+
+@media screen and (max-width: 830px) {
+    .new_commer_section {
+        grid-column: 1 / 12 span;
+    }
+    .new_commer_text_button, .headline-subhead {
+        place-items: center;
+        text-align: center;
+        font-size: var(--font-size-s);
+    }
+    .subhead {
+        padding: 10px;  
+        width: 100%;
+    }
+    .new_commer_section_frame {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
 }
 </style>

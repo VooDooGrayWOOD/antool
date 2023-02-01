@@ -30,12 +30,11 @@ export default {}
     grid-row: 3 / 1 span;
     place-items: center;
     gap: 20px;
-    max-height: 250px;
     margin-top: 200px;
 }
 .brand_items {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 150px 1fr ;
     place-items: center;
     gap: 20px;
 }
@@ -44,12 +43,24 @@ export default {}
     place-items: center;
     font-size: var(--font-size-l);
     color: var(--text-white-80);
+
 }
 .brand_images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    place-items: center stretch;
+    place-items: center;
     gap: 30px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 930px) {
+    .brand_images {
+        grid-template-columns: none;
+    }
+    .brand_header {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 </style>

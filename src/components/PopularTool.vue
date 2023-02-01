@@ -80,8 +80,9 @@ export default {
 }
 @media screen and (max-width: 730px) {
     .head {
-        grid-column: 2 / 5 span;
+        grid-column: 1 / 12 span;
         margin: 0 auto;
+        text-align: center;
     }
 }
 </style>

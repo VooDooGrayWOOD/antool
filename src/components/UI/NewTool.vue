@@ -43,25 +43,22 @@ export default {
 
 <style lang="scss" scoped>
 .new_tools {
-    display: block;
-    min-width: 392px;
-    min-height: 294px;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    gap: 15px;
+    place-items: center;
 }
 .template {
-    margin: auto;
-    padding: 33px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid transparent;
 }
 
 .template:hover {
     border: 1px solid gray;
-    background-color: var(--tool-hover-template);
-    border-radius: 15px;
-    transform: translateY(-30px);
+    background: var(--tool-hover-template);
+    border-radius: 15px; 
     color: var(--text-white-80);
     .action_button {
         align-items: center;
@@ -76,36 +73,36 @@ export default {
         height: 48px;
         justify-content: center;
         mix-blend-mode: normal;
-        padding: 0px 50px;
+        padding: 0px 30px;
         pointer-events: auto;
         position: relative;
         border: none;
         box-shadow: none;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         width: fit-content;
     }
 }
 .new_tools_description p {
+    margin-left: auto;
     color: var(--tool-descrition);
-    padding-top: 30px;
 }
 .new_tools_image {
     display: flex;
     align-items: center;
-    padding: 0px 5px;
+    margin: 0px 5px;
 }
 .name_new_tools {
-    padding: 0px 30px;
+    padding: 0 10px;
     color: var(--text-white-80);
 }
 .subhead_new_tools {
     color: var(--subhead-tool);
+    margin: 0;
 }
 .action_icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
 }
 .action_images img {
     padding: 0px 12px 0px 0px;
@@ -124,4 +121,17 @@ export default {
     background-color: var(--background);
     color: var(--call-to-action);
 }
+
+@media screen and (max-width: 530px) {
+    .new_tools {
+        grid-template-columns: 1fr;
+        grid-column: 1 / 12 span;
+        gap: 2px;
+        margin: 0 auto;
+    }
+    .template {
+        padding: 33px;
+    }
+}
+
 </style>

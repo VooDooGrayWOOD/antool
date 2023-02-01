@@ -36,7 +36,7 @@ export default {
 .hero_section {
     background-color: var(--background);
     display: grid;
-    grid-column: 2 / 11 span;
+    grid-column: 1 / 12 span;
     grid-row: 1 / 1 span;
     margin: 0 auto;
 }
@@ -127,6 +127,9 @@ export default {
 }
 
 @media screen and (max-width: 790px) {
+  .hero_section {
+    text-align: center;
+  }
   .subhead_head {
     font-size: var(--font-size-xl);
   }

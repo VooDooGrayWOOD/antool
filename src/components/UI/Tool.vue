@@ -59,9 +59,9 @@ export default {
 
 .template:hover {
     border: 1px solid gray;
-    background-color: var(--tool-hover-template);
     border-radius: 15px;
-    transform: translateY(-30px);
+    background: var(--tool-hover-template);
+    transition: background-color 0.5s ease;
     color: var(--text-white-80);
     .action_button {
         align-items: center;
@@ -137,6 +137,9 @@ export default {
 @media screen and (max-width: 930px) {
     .tool {
         grid-template-columns: 1fr;
+    }
+    .tools_image {
+        justify-content: center;
     }
 }
 </style>

@@ -3,8 +3,8 @@
     <div class='container'>
         <hero-section></hero-section>
         <popular-tool></popular-tool>
-        <!-- <brand-section></brand-section> -->
-        <!-- <new-commer-tools></new-commer-tools> -->
+        <brand-section></brand-section>
+        <new-commer-tools></new-commer-tools>
         <!-- <testimonial></testimonial> -->
         <!-- <contributor></contributor> -->
         <!-- <contacts-categories-section></contacts-categories-section> -->
