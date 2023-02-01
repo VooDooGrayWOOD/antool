@@ -34,7 +34,7 @@ export default {}
 }
 .brand_items {
     display: grid;
-    grid-template-rows: 150px 1fr ;
+    grid-template-rows: 120px 1fr ;
     place-items: center;
     gap: 20px;
 }
@@ -50,7 +50,7 @@ export default {}
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
     gap: 30px;
-    padding: 30px;
+    padding: 60px 30px;
 }
 
 @media screen and (max-width: 930px) {

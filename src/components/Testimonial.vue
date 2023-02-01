@@ -1,32 +1,36 @@
 <template>
-<div class="chevron">
-    <img src="@/assets/chevron-left.png" alt="chevron-left">
-    <img src="@/assets/chevron-right.png" alt="chevron-right">
-</div>
-    <div class="testimonial">
-        <div class="testimonial_photo">
-            <img src="@/assets/ronald.png" alt="ronald" />
-            <img class="dots" src="@/assets/dots.png" alt="dots" />
-            <div class="name_profession">
-                <div class="name_profession-items">
-                    <p class="name">Ronald Richards</p>
-                    <p class="profession">Product Manager</p>
+    <div class="chevron-left">
+        <img src="@/assets/chevron-left.png" alt="chevron-left" />
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <div class="testimonial_photo">
+                <img class="photo" src="@/assets/ronald.png" alt="ronald" />
+                <img class="dots" src="@/assets/dots.png" alt="dots" />
+                <div class="name_profession">
+                    <div class="name_profession-items">
+                        <p class="name">Ronald Richards</p>
+                        <p class="profession">Product Manager</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="testimonial_info">
-            <p>
-                Incididunt cillum do sint sint enim ullamco id deserunt mollit
-                qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
-                Do nulla velit labore occaecat do deserunt Lorem magna officia
-                incididunt consectetur amet. Sunt consectetur veniam minim ex
-                commodo sint non. Occaecat aute officia excepteur non laboris id
-                qui ad.
-            </p>
+            <div class="testimonial_info">
+                <p>
+                    Incididunt cillum do sint sint enim ullamco id deserunt
+                    mollit qui reprehenderit do. Velit ex tempor cillum ad sint
+                    occaecat. Do nulla velit labore occaecat do deserunt Lorem
+                    magna officia incididunt consectetur amet. Sunt consectetur
+                    veniam minim ex commodo sint non. Occaecat aute officia
+                    excepteur non laboris id qui ad.
+                </p>
+            </div>
         </div>
     </div>
+    <div class="chevron-right">
+        <img src="@/assets/chevron-right.png" alt="chevron-right" />
+    </div>
     <div class="pagination">
-        <img src="@/assets/pagination.png" alt="">
+        <img src="@/assets/pagination.png" alt="" />
     </div>
 </template>
 
@@ -35,29 +39,40 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.testimonial-container {
+    display: grid;
+    grid-column: 2 / 10 span;
+    grid-row: 5 / 1 span;
+    gap: 20px;
+}
+.chevron-left {
+    display: grid;
+    place-items: center;
+    grid-column: 1 / 1 span;
+}
+
+.chevron-right {
+    display: grid;
+    place-items: center;
+    grid-column: 12 / 1 span;
+}
+
 .testimonial {
     display: grid;
-    grid-column: 2 / 11 span;
-    grid-row: 5 / 1 span;
-    gap: 30px;
-    place-items: center;
-    mix-blend-mode: normal;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
 }
-.testimonial_photo {
-    max-width: 400px;
-}
+
 .dots {
     position: relative;
     bottom: 410px;
-    left: 450px;
+    left: 420px;
 }
 .name_profession {
     position: relative;
     z-index: 1;
     bottom: 245px;
     left: 150px;
-    width: 290px;
+    width: 275px;
     line-height: 0.3;
     background-color: var(--brand-section);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -67,37 +82,31 @@ export default {}
 }
 .name_profession-items {
     position: relative;
-    padding: 10px 28px;
+    padding: 5px 20px;
 }
 .name {
     font-size: var(--font-size-xl);
 }
 .testimonial_info {
-    position: relative;
-    max-width: 395px;
-    left: 60px;
-    top: 140px;
-    margin-left: 40px;
-}
-.chevron:nth-child(1) {
+    max-width: 300px;
     display: grid;
     place-items: center;
-    grid-column: 1 / 1 span;
-    grid-row: 5 / 1 span;
+    font-size: 12px;
+    margin: 0 auto;
 }
-
-.chevron:nth-child(-n+1) {
-    display: grid;
-    place-items: center;
-    grid-column: 12 / 1 span;
-    grid-row: 5 / 1 span;
-}
-
 
 .pagination {
     position: relative;
     bottom: 100px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-column: 1 / 12 span;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .testimonial_photo {
+        width: 100px;
+        font-size: xx-small;
+    }
 }
 </style>

@@ -5,14 +5,14 @@
                 <div class="headline-subhead">
                     <p class="subhead_head">Newcomer Tools</p>
                     <div class="subhead">
-                    <p>
-                        Wow! see the latest update of the most 
-                        recommended&nbsp;tools&nbsp;from&nbsp;reliable&nbsp;designers 
-                        and developers
-                    </p>
+                        <p>
+                            Wow! see the latest update of the most
+                            recommended&nbsp;tools&nbsp;from&nbsp;reliable&nbsp;designers
+                            and developers
+                        </p>
+                    </div>
                 </div>
-                </div>
-                <my-button >Explore more</my-button>
+                <my-button>Explore more</my-button>
             </div>
             <div class="tools">
                 <NewTool :new_tools="new_tools"></NewTool>
@@ -24,7 +24,7 @@
 <script>
 import MyButton from './UI/MyButton.vue'
 import NewTool from './UI/NewTool.vue'
-import  * as images from '@/assets/index.js'
+import * as images from '@/assets/index.js'
 export default {
     components: { MyButton, NewTool },
     data() {
@@ -32,9 +32,9 @@ export default {
             new_tools: [
                 {
                     id: 1,
-                    tool_name: 'Zeplin',
-                    tool_subhead_name: 'Free & Paid',
-                    tool_image: images.urlImgZeplin
+                    tool_name: 'Procreate',
+                    tool_subhead_name: 'Paid',
+                    tool_image: images.urlImgProcreate
                 },
                 {
                     id: 2,
@@ -50,9 +50,9 @@ export default {
                 },
                 {
                     id: 4,
-                    tool_name: 'Procreate',
-                    tool_subhead_name: 'Paid',
-                    tool_image: images.urlImgProcreate
+                    tool_name: 'Zeplin',
+                    tool_subhead_name: 'Free & Paid',
+                    tool_image: images.urlImgZeplin
                 }
             ]
         }
@@ -102,17 +102,18 @@ export default {
     font-size: var(--font-size-xxl);
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1000px) {
     .new_commer_section {
         grid-column: 1 / 12 span;
     }
-    .new_commer_text_button, .headline-subhead {
+    .new_commer_text_button,
+    .headline-subhead {
         place-items: center;
         text-align: center;
         font-size: var(--font-size-s);
     }
     .subhead {
-        padding: 10px;  
+        padding: 10px;
         width: 100%;
     }
     .new_commer_section_frame {

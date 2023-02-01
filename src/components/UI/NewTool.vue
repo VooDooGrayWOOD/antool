@@ -5,7 +5,9 @@
                 <img :src="tool.tool_image" alt="bb" />
                 <div class="name_new_tools">
                     <p>{{ tool.tool_name }}</p>
-                    <p class="subhead_new_tools">{{ tool.tool_subhead_name }}</p>
+                    <p class="subhead_new_tools">
+                        {{ tool.tool_subhead_name }}
+                    </p>
                 </div>
             </div>
             <div class="new_tools_description">
@@ -52,13 +54,12 @@ export default {
 .template {
     margin: 20px;
     padding: 30px;
-    border: 1px solid transparent;
 }
 
 .template:hover {
     border: 1px solid gray;
     background: var(--tool-hover-template);
-    border-radius: 15px; 
+    border-radius: 15px;
     color: var(--text-white-80);
     .action_button {
         align-items: center;
@@ -73,7 +74,7 @@ export default {
         height: 48px;
         justify-content: center;
         mix-blend-mode: normal;
-        padding: 0px 30px;
+        padding: 0 30px;
         pointer-events: auto;
         position: relative;
         border: none;
@@ -133,5 +134,4 @@ export default {
         padding: 33px;
     }
 }
-
 </style>

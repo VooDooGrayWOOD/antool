@@ -5,7 +5,7 @@
         <popular-tool></popular-tool>
         <brand-section></brand-section>
         <new-commer-tools></new-commer-tools>
-        <!-- <testimonial></testimonial> -->
+        <testimonial></testimonial>
         <!-- <contributor></contributor> -->
         <!-- <contacts-categories-section></contacts-categories-section> -->
     </div>
