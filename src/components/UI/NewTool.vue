@@ -47,7 +47,7 @@ export default {
 .new_tools {
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 15px;
     place-items: center;
 }
@@ -123,15 +123,4 @@ export default {
     color: var(--call-to-action);
 }
 
-@media screen and (max-width: 530px) {
-    .new_tools {
-        grid-template-columns: 1fr;
-        grid-column: 1 / 12 span;
-        gap: 2px;
-        margin: 0 auto;
-    }
-    .template {
-        padding: 33px;
-    }
-}
 </style>

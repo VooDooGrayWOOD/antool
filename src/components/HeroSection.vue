@@ -11,13 +11,14 @@
                         free Design and Development tools
                     </p>
                 </div>
-                <div class="input_search">
+                <div class="search_div">
                     <img
                         class="input_img"
                         src="../assets/search.png"
                         alt="search"
                     />
                     <input
+                        class="input_search"
                         type="text"
                         placeholder="find more than 430+ tools..."
                     />
@@ -76,16 +77,17 @@ export default {
     font-size: var(--font-size-xxxl);
 }
 
-.input_search,
-input {
+.search_div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.input_search, input {
     background: var(--input-fill);
     border-radius: 15px;
     border: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 2 span;
+    grid-column: 1 / 5 span;
     height: 65px;
-    width: 100%;
 }
 
 .input_button {
@@ -93,9 +95,12 @@ input {
     align-self: center;
     justify-self: center;
     left: -10px;
+    top: -56px;
 }
 
 ::-webkit-input-placeholder {
+    position: relative;
+    left: 50px;
     font-size: var(--font-size-m);
 }
 
@@ -103,7 +108,8 @@ input {
     position: relative;
     grid-column: 1;
     align-self: center;
-    left: 20px;
+    left: 15px;
+    top: 43px;
 }
 
 .social_icon img {
@@ -135,7 +141,7 @@ input {
     .hero_illustration {
         display: none;
     }
-    .input_search {
+    .search_div {
         display: none;
     }
 }

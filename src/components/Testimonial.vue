@@ -62,7 +62,8 @@ export default {}
     grid-template-columns: repeat(2, 1fr);
 }
 
-.testimonial_photo {
+.testimonial_photo, img {
+    max-width: 100%;
     margin: 0 auto;
 }
 

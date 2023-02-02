@@ -64,15 +64,20 @@ export default {}
 
 <style lang="scss" scoped>
 .line {
+    display: grid;
+    grid-column: 1 / 12 span;
     border-bottom: 1px solid var(--button-load-more-border);
+    padding: 60px 0;
 }
 .contact_categories {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column: 1 / 12 span;
+    place-items: center;
     align-items: flex-start;
     font-size: var(--font-size-s);
     color: var(--tool-descrition);
+    text-align: center;
 }
 .logo_copyright {
     padding-left: 30px;
@@ -81,9 +86,8 @@ export default {}
     font-size: var(--font-size-m);
 }
 .logo {
-    display: flex;
-    justify-content: start;
-    padding: 22px 0;
+    display: grid;
+    padding: 5px 0;
 }
 .head {
     font-size: var(--font-size-l);

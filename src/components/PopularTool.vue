@@ -65,6 +65,7 @@ export default {
     grid-column: 1 / 12 span;
     grid-row: 2 / 1 span;
     margin: 0 auto;
+    padding: 70px 0;
 }
 .header {
     display: grid;
