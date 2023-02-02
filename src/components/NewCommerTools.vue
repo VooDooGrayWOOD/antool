@@ -71,7 +71,7 @@ export default {
     height: auto;
     place-items: center;
     mix-blend-mode: normal;
-    margin: 200px auto;
+    margin: 50px auto;
 }
 .new_commer_section_frame {
     background-color: transparent;

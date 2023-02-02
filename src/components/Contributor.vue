@@ -88,9 +88,4 @@ input {
     left: -10px;
     top: -56px;
 }
-::-webkit-input-placeholder {
-    position: relative;
-    left: 20px;
-    font-size: var(--font-size-m);
-}
 </style>

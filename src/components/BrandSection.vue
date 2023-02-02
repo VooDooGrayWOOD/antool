@@ -30,7 +30,7 @@ export default {}
     grid-row: 3 / 1 span;
     place-items: center;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 .brand_items {
     display: grid;

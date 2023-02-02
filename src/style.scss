@@ -38,4 +38,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+
+    ::-moz-placeholder { color: var(--tool-descrition); font-size: var(--font-size-m);position: relative; left: 20px; text-align: left;}
+    :-moz-placeholder { color: var(--tool-descrition); font-size: var(--font-size-m);position: relative; left: 20px; text-align: left;}
+    ::-webkit-input-placeholder { color: var(--tool-descrition); font-size: var(--font-size-m); position: relative; left: 20px;}
+    :-ms-input-placeholder { color: var(--tool-descrition); font-size: var(--font-size-m); position: relative; left: 20px;}
+    ::-ms-input-placeholder { color: var(--tool-descrition); font-size: var(--font-size-m); position: relative; left: 20px;}
+    ::placeholder { color: var(--tool-descrition); font-size: var(--font-size-m); position: relative; left: 20px;}
 }
