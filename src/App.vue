@@ -6,7 +6,7 @@
         <brand-section></brand-section>
         <new-commer-tools></new-commer-tools>
         <testimonial></testimonial>
-        <!-- <contributor></contributor> -->
+        <contributor></contributor>
         <!-- <contacts-categories-section></contacts-categories-section> -->
     </div>
 </template>

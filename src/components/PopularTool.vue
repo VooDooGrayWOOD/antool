@@ -78,11 +78,14 @@ export default {
     font-size: var(font-size-m);
     color: var(--tool-descrition);
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 790px) {
     .head {
         grid-column: 1 / 12 span;
         margin: 0 auto;
         text-align: center;
+    }
+    .header {
+        font-size: var(--font-size-xl);
     }
 }
 </style>

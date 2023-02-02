@@ -7,7 +7,7 @@
         <div class='nav_btn'>
             <div class='btn'>Home</div>
             <div class='btn'>Categories</div>
-            <div class='btn'>My Collections</div>
+            <div class='btn'>Collections</div>
             <div class='btn'>Blog</div>
             <div class='btn'>Log In</div>
             <my-button>
@@ -61,7 +61,10 @@ export default {
     place-items: center end;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 790px) {
+    .logo {
+    grid-column: 2 / 4 span;
+}
     .nav_btn {
         display: none;
     }

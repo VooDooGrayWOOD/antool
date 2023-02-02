@@ -1,34 +1,46 @@
 <template>
-  <div class="hero_section">
-    <div class="hero_section_frame">
-      <div class="hero_text_button">
-        <div class="headline-subhead">
-          <p class="subhead_head">Awesome tools for Designer & Developer.</p>
-          <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+    <div class="hero_section">
+        <div class="hero_section_frame">
+            <div class="hero_text_button">
+                <div class="headline-subhead">
+                    <p class="subhead_head">
+                        Awesome tools for Designer & Developer.
+                    </p>
+                    <p>
+                        Antool is a web collection of information on paid or
+                        free Design and Development tools
+                    </p>
+                </div>
+                <div class="input_search">
+                    <img
+                        class="input_img"
+                        src="../assets/search.png"
+                        alt="search"
+                    />
+                    <input
+                        type="text"
+                        placeholder="find more than 430+ tools..."
+                    />
+                    <my-button class="input_button">Search</my-button>
+                </div>
+                <div class="social_icon">
+                    <img src="../assets/facebook.png" alt="facebook" />
+                    <img src="../assets/instagram.png" alt="instagram" />
+                    <img src="../assets/twitter.png" alt="twitter" />
+                </div>
+            </div>
+            <div class="hero_illustration">
+                <img src="../assets/Illustration.png" alt="" />
+            </div>
         </div>
-        <div class="input_search">
-          <img class="input_img" src="../assets/search.png" alt="search">
-          <input type="text" placeholder="find more than 430+ tools...">
-          <my-button class="input_button">Search</my-button>
-        </div>
-        <div class="social_icon">
-          <img src="../assets/facebook.png" alt="facebook">
-          <img src="../assets/instagram.png" alt="instagram">
-          <img src="../assets/twitter.png" alt="twitter">
-        </div>
-      </div>
-      <div class="hero_illustration">
-        <img src="../assets/Illustration.png" alt="">
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
-import MyButton from "./UI/MyButton.vue"
+import MyButton from './UI/MyButton.vue'
 
 export default {
-  components: {MyButton}
+    components: { MyButton }
 }
 </script>
 
@@ -42,96 +54,103 @@ export default {
 }
 
 .hero_section_frame {
- border: 1px none;
- display: flex;
- align-items: center;
- height: auto;
- position: relative;
+    border: 1px none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
 }
 
 .hero_text_button {
- display: grid;
- place-items: center stretch;
- gap: 20px;
+    display: grid;
+    place-items: center start;
+    gap: 20px;
 }
 
 .headline-subhead {
- display: flex;
- flex-direction: column;
- gap: 20px;
- height: auto;
- position: relative;
+    display: grid;
+    gap: 10px;
+    height: auto;
 }
 
 .subhead_head {
- font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xxxl);
 }
 
-.input_search input {
- background: linear-gradient(90deg, var(--input-fill), rgba(255, 255, 255, 0.05)) no-repeat;
- width: 497px;
- height: 64px;
- border-radius: 15px;
- border: none;
- left: 0;
- position: absolute;
+.input_search,
+input {
+    background: var(--input-fill);
+    border-radius: 15px;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2 span;
+    height: 65px;
+    width: 100%;
 }
 
 .input_button {
- position: relative;
- z-index: 1;
- left: 330px;
- bottom: 22.5px;
+    grid-column: 5;
+    align-self: center;
+    justify-self: center;
+    left: -10px;
 }
 
 ::-webkit-input-placeholder {
- padding-left: 45px;
- font-size: var(--font-size-m);
+    font-size: var(--font-size-m);
 }
 
 .input_img {
- position: relative;
- z-index: 1;
- left: 18px;
- bottom: -20px;
+    position: relative;
+    grid-column: 1;
+    align-self: center;
+    left: 20px;
 }
 
 .social_icon img {
- width: 58px;
- height: 58px;
- margin: 80px 20px 0 0;
- cursor: pointer;
+    width: 58px;
+    height: 58px;
+    margin: 80px 20px 0 0;
+    cursor: pointer;
 }
 
 .hero_illustration {
- padding-left: 115px;
- max-width: 589px;
+    padding-left: 115px;
+    max-width: 589px;
 }
 
 @media screen and (max-width: 1020px) {
-  .hero_section_frame {
-    max-height: 600px;
-  }
-  .hero_text_button {
-    place-items: center;
-  }
-  .subhead_head {
-    font-size: var(--font-size-xxl);
-  }
-  .hero_illustration {
-    display: none;
-  }
-  .input_search {
-    display: none;
-  }
+    .hero_section_frame {
+        max-height: 600px;
+    }
+
+    .hero_text_button {
+        grid-column: 2 span;
+        text-align: center;
+        place-items: center;
+    }
+
+    .subhead_head {
+        font-size: var(--font-size-xxl);
+    }
+    .hero_illustration {
+        display: none;
+    }
+    .input_search {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 790px) {
-  .hero_section {
-    text-align: center;
-  }
-  .subhead_head {
-    font-size: var(--font-size-xl);
-  }
+    .hero_section {
+        text-align: center;
+    }
+    .subhead_head {
+        font-size: var(--font-size-xl);
+    }
+    .social_icon img {
+        margin: 0;
+        width: 38px;
+        height: 38px;
+    }
 }
 </style>

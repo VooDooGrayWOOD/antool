@@ -32,30 +32,25 @@ export default {
 <style lang="scss" scoped>
 .contributor_section {
     background-color: var(--background);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     height: auto;
-    margin: 100px 195px;
+    margin: 0 auto;
 }
-.contributor_section_frame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
-}
-.contributor_section_text_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .contributor_section_frame {
+//     display: grid;
+//     // place-items: center;
+//     // height: auto;
+// }
+// .contributor_section_text_button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .headline-subhead {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
     gap: 20px;
     height: auto;
 }
@@ -65,8 +60,6 @@ export default {
 }
 
 .sub_head {
-    display: flex;
-    justify-content: center;
     font-size: var(font-size-m);
     color: var(--tool-descrition);
 }
