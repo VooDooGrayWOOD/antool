@@ -79,15 +79,14 @@ export default {}
     color: var(--tool-descrition);
     text-align: center;
 }
-.logo_copyright {
-    padding-left: 30px;
-}
+
 .copyright {
     font-size: var(--font-size-m);
 }
 .logo {
     display: grid;
-    padding: 5px 0;
+    margin: 10px 0;
+    place-items: center;
 }
 .head {
     font-size: var(--font-size-l);

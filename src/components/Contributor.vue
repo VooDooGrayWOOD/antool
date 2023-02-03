@@ -36,10 +36,6 @@ export default {
     height: 400px;
     margin: 0 auto;
 }
-.contributor_section_frame {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
 
 .contributor_section_text_button {
     display: grid;

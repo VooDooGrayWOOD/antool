@@ -8,6 +8,7 @@ import urlImgZeplin from '@/assets/zeplin.png'
 import urlImgPHPStorm from '@/assets/jb_phpstorm.png'
 import urlImgToolbox from '@/assets/jb_toolbox_app.png'
 import urlImgProcreate from '@/assets/procreate.png'
+import barsSolid from '@/assets/bars-solid.svg'
 
 
 export { 
@@ -20,5 +21,6 @@ export {
     urlImgZeplin,
     urlImgPHPStorm,
     urlImgToolbox,
-    urlImgProcreate
+    urlImgProcreate,
+    barsSolid,
 }

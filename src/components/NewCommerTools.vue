@@ -6,9 +6,8 @@
                     <p class="subhead_head">Newcomer Tools</p>
                     <div class="subhead">
                         <p>
-                            Wow! see the latest update of the most
-                            recommended&nbsp;tools&nbsp;from&nbsp;reliable&nbsp;designers
-                            and developers
+                            Wow! see the latest update of the most recommended
+                            tools from reliable designers and developers
                         </p>
                     </div>
                 </div>
@@ -112,8 +111,12 @@ export default {
         text-align: center;
         font-size: var(--font-size-s);
     }
+    .subhead_head {
+        margin: 20px 0;
+    }
     .subhead {
-        padding: 10px;
+        margin: 0 40px 20px;
+        padding: 0 20px;
         width: 100%;
     }
     .new_commer_section_frame {
