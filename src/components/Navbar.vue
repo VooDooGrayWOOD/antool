@@ -25,6 +25,17 @@
         </div>
         <transition name="mobile-nav">
             <ul v-show="mobileNav" class="dropdown-nav">
+                <li>
+                    <div class="icon">
+                        <img
+                            @click="toggleMobileNav"
+                            v-show="mobile"
+                            :class="{ 'icon-active': mobileNav }"
+                            src="@/assets/cross.svg"
+                            alt="close"
+                        />
+                    </div>
+                </li>
                 <li class="link">Home</li>
                 <li class="link">Categories</li>
                 <li class="link">Collections</li>
@@ -164,9 +175,9 @@ export default {
     background-color: var(--input-fill);
     display: grid;
     grid-column: 10 / 1 span;
-    grid-area: 30px;
     place-items: center;
     position: fixed;
+    z-index: 2;
     width: 100%;
     max-width: 250px;
     height: 100%;
@@ -197,6 +208,9 @@ export default {
 @media screen and (max-width: 440px) {
     .navbar {
         padding: 0 20px;
+    }
+    .logo {
+        grid-column: 1 / 2 span;
     }
     .dropdown-nav {
         grid-column: 7 / 2 span;

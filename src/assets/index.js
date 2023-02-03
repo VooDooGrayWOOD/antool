@@ -9,6 +9,7 @@ import urlImgPHPStorm from '@/assets/jb_phpstorm.png'
 import urlImgToolbox from '@/assets/jb_toolbox_app.png'
 import urlImgProcreate from '@/assets/procreate.png'
 import barsSolid from '@/assets/bars-solid.svg'
+import crossButton from '@/assets/cross.svg'
 
 
 export { 
@@ -23,4 +24,5 @@ export {
     urlImgToolbox,
     urlImgProcreate,
     barsSolid,
+    crossButton,
 }
